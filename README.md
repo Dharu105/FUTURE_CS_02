@@ -1,31 +1,35 @@
-# FUTURE_CS_02
-🛡️ Task 2: Security Alert Monitoring & Incident Response
+# 🔐 Internship Task – Security Alert Monitoring
 
-🔍 Overview
+## 📘 About the Project
 
-This internship task involved analyzing simulated HTTP log data using ELK Stack (Elasticsearch, Logstash, Kibana) and Splunk to detect unauthorized access attempts, visualize alert patterns, and assess potential privilege escalation behaviors.
+This internship task focuses on analyzing security alerts and suspicious logs using tools like Elastic Stack (Elasticsearch, Logstash, Kibana) and Splunk. The goal was to detect unusual behavior in system logs and write a report based on the findings.
 
-🛠️ Tools Used
+---
 
-Elastic Stack (Elasticsearch, Logstash/Filebeat, Kibana)
-Splunk Free Trial
-Burp Suite
-jwt.io
-Windows Snipping ToolI
+## 🛠️ Tools Used
 
-📁 Repository Contents
+- Elasticsearch and Kibana (ELK Stack)
+- Splunk Trial
+- Burp Suite (for simulated requests)
+- jwt.io (for token analysis)
 
-task-2-security-alert-monitoring.docx – Final incident response report
-/queries/ – KQL filters applied in Kibana for endpoint triage
-README.md – Project summary and metadata
+---
 
-✅ Summary of Findings
+## 📄 What’s Included
 
-Repeated 403 Forbidden responses observed for /admin endpoint
-IP 192.168.0.1 identified as a consistent actor attempting unauthorized access
-Response payload analysis revealed consistent body sizes (~512 bytes)
-Visual dashboards showed scanning behavior and potential escalation attempts
-Mitigation strategies include response normalization and rate limiting
+- 📝 Task Report – contains log analysis, visualizations, and conclusions  
+- 📂 Queries – filters written in KQL used to detect access attempts  
+- 📁 Notes – summary of findings and explanations
 
-📘 Developed as part of my cybersecurity internship at Future Interns.
-Feel free to explore or reach out for collaboration!
+---
+
+## ✅ Key Findings
+
+- Repeated failed access to `/admin` endpoint detected  
+- IP `192.168.0.1` showed signs of probing and privilege escalation attempts  
+- Payload sizes were mostly stable but revealed system behavior clues  
+- Suggested actions include stronger access controls and alert rules
+
+---
+
+🔎 This task was done as part of my internship to learn more about SOC workflows and threat detection.
